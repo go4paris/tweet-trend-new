@@ -10,16 +10,10 @@ environment {
 }
 
     stages {
-        stage('Checkout') {
+        stage("Checkout") {
             steps {
                 git branch: 'main', url: 'https://github.com/go4paris/tweet-trend-new.git'
             }
         }
     }
-    stages {
-        stage("Build War") {
-            steps {
-                sh 'mvn package'
-            }
-        }
-    }
+   
