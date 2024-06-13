@@ -12,7 +12,7 @@ environment {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/go4paris/tweet-trend-new.git'
+                git branch: 'main', url: 'https://github.com/go4paris/tweet-trend-new.git'
             }
         }
     }
